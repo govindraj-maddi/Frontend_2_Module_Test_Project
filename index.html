@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body id="body">
+    <!-- main conatiner -->
+    <div id="main_div_conatiner">
+        <!-- cart container -->
+        <div id="cart_container">
+            <header id="cart_header">Cart</header>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="cross" onclick="closeCart()"><path fill="#d85b53" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3.21 11.79a1 1 0 0 1 0 1.42 1 1 0 0 1-1.42 0L12 13.41l-1.79 1.8a1 1 0 0 1-1.42 0 1 1 0 0 1 0-1.42l1.8-1.79-1.8-1.79a1 1 0 0 1 1.42-1.42l1.79 1.8 1.79-1.8a1 1 0 0 1 1.42 1.42L13.41 12Z" class="color464646 svgShape"></path></svg>
+            <ul id="cart_item_list">
+            </ul>
+            <button type="button" id="orderSubmit">Submit Order</button>
+        </div>
+        <!-- food menu grid container -->
+        <div id="food_menu_container">
+        </div>
+        <!-- window to display message -->
+        <div id="message_display_window">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="cross" onclick="closeWindow1()"><path fill="#d85b53" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3.21 11.79a1 1 0 0 1 0 1.42 1 1 0 0 1-1.42 0L12 13.41l-1.79 1.8a1 1 0 0 1-1.42 0 1 1 0 0 1 0-1.42l1.8-1.79-1.8-1.79a1 1 0 0 1 1.42-1.42l1.79 1.8 1.79-1.8a1 1 0 0 1 1.42 1.42L13.41 12Z" class="color464646 svgShape"></path></svg>  
+            <label id="message_content"></label>
+            <button id="display_window_btn" onclick="closeWindow()">OK</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
