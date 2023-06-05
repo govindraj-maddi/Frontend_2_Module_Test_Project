@@ -111,7 +111,7 @@ function takeOrder()
                     setTimeout(
                         () => {
                     
-                            resolve('{"order_status":"false", "paid":"false"}');
+                            //resolve('{"order_status":"false", "paid":"false"}');
                             reject(new Error("Could Not Take Order, Refresh and Try again"));
                         
                         //orderObj=orderObjInner;
